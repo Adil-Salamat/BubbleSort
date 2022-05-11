@@ -5,7 +5,6 @@ public class Main {
     int [] bubbleSortArray = {4, 7, -9, 11, 256, 3, 1, 95};
 
 
-
     System.out.println(Arrays.toString(BubbleSorter5000.bubbleSorter5000(bubbleSortArray)));
 
 
