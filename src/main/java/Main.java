@@ -1,6 +1,6 @@
-import Sorters.ActualMergeSorter5000;
-import Sorters.BinaryTreeSorter5000;
-import Sorters.BubbleSorter5000;
+import sorters.ActualMergeSorter5000;
+import sorters.BinaryTreeSorter5000;
+import sorters.BubbleSorter5000;
 
 import java.util.Arrays;
 

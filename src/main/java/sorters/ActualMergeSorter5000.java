@@ -1,4 +1,4 @@
-package Sorters;
+package sorters;
 
 public class ActualMergeSorter5000 implements Sorter5000 {
   @Override

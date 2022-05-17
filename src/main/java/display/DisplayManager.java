@@ -1,6 +1,6 @@
-package Display;
+package display;
 
-import Sorters.Sorter5000;
+import sorters.Sorter5000;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,8 +25,8 @@ public class DisplayManager {
 
   public static void displaySortChoices(){
     System.out.println("Enter the number of the sorter you wanna use: ");
-    for(int i=1; i<getMenuItems().size(); i++){
-      System.out.println(i + ", " + getMenuItems().get(i));
+    for(int i=0; i<getMenuItems().size(); i++){
+      System.out.println(i+1 + ", " + getMenuItems().get(i));
     }
   }
 }
