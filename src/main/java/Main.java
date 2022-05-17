@@ -1,3 +1,7 @@
+import Sorters.ActualMergeSorter5000;
+import Sorters.BinaryTreeSorter5000;
+import Sorters.BubbleSorter5000;
+
 import java.util.Arrays;
 
 public class Main {
@@ -8,10 +12,9 @@ public class Main {
     int[] mergeSortArray = {9,34,5,876,3,1,2,21};
 
     //int[] array1 = {1,7,3,4,5};
-   // int[] array2 = {10,9,8,7,6};
-
-   // int[] array3 = {1,3,5,5,9};
-   // int[] array4 = {2,4,6};
+    // int[] array2 = {10,9,8,7,6};
+    // int[] array3 = {1,3,5,5,9};
+    // int[] array4 = {2,4,6};
 
     int[] treeArray= {5,7,2,4,57657,98,65};
 

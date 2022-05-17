@@ -1,7 +1,9 @@
+package Sorters;
+
+import Sorters.BubbleSorter5000;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 class BubbleSorter5000Test {
   BubbleSorter5000 bubble = new BubbleSorter5000();

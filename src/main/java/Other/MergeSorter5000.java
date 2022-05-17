@@ -13,7 +13,7 @@
 //      merge[j + array1.length] = array2[j];
 //    }
 //
-//    return BubbleSorter5000.sort(merge);
+//    return Sorters.BubbleSorter5000.sort(merge);
 //  }
 //
 //}

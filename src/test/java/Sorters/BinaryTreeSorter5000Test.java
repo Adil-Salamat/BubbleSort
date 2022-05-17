@@ -1,7 +1,9 @@
+package Sorters;
+
+import Sorters.BinaryTreeSorter5000;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 class BinaryTreeSorter5000Test {
   BinaryTreeSorter5000 binary = new BinaryTreeSorter5000();

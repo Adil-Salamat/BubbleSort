@@ -13,7 +13,7 @@
 //
 //    int[]merge = MergeSorter5000.mergeSorter5000( array1,array2 );
 //
-//    int[] actuallySorted = BubbleSorter5000.bubbleSorter5000( merge );
+//    int[] actuallySorted = Sorters.BubbleSorter5000.bubbleSorter5000( merge );
 //
 //    assertThat(actuallySorted).isEqualTo(sorted);
 //  }
@@ -26,7 +26,7 @@
 //
 //    int[]merge = MergeSorter5000.mergeSorter5000( array1,array2 );
 //
-//    int[] actuallySorted = BubbleSorter5000.bubbleSorter5000( merge );
+//    int[] actuallySorted = Sorters.BubbleSorter5000.bubbleSorter5000( merge );
 //
 //    assertThat(actuallySorted).isEqualTo(sorted);
 //  }
@@ -39,7 +39,7 @@
 //
 //    int[]merge = MergeSorter5000.mergeSorter5000( array1,array2 );
 //
-//    int[] actuallySorted = BubbleSorter5000.bubbleSorter5000( merge );
+//    int[] actuallySorted = Sorters.BubbleSorter5000.bubbleSorter5000( merge );
 //
 //    assertThat(actuallySorted).isEqualTo(sorted);
 //  }
@@ -52,7 +52,7 @@
 //
 //    int[]merge = MergeSorter5000.mergeSorter5000( array1,array2 );
 //
-//    int[] actuallySorted = BubbleSorter5000.bubbleSorter5000( merge );
+//    int[] actuallySorted = Sorters.BubbleSorter5000.bubbleSorter5000( merge );
 //
 //    assertThat(actuallySorted).isEqualTo(sorted);
 //  }
@@ -65,7 +65,7 @@
 //
 //    int[]merge = MergeSorter5000.mergeSorter5000( array1,array2 );
 //
-//    int[] actuallySorted = BubbleSorter5000.bubbleSorter5000( merge );
+//    int[] actuallySorted = Sorters.BubbleSorter5000.bubbleSorter5000( merge );
 //
 //    assertThat(actuallySorted).isEqualTo(sorted);
 //  }

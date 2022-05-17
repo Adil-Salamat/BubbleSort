@@ -1,7 +1,9 @@
+package Sorters;
+
+import Sorters.ActualMergeSorter5000;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 class ActualMergeSorter5000Test {
 ActualMergeSorter5000 merger = new ActualMergeSorter5000();

@@ -1,4 +1,6 @@
-public class BinaryTreeSorter5000 implements Sorter5000{
+package Sorters;
+
+public class BinaryTreeSorter5000 implements Sorter5000 {
   @Override
   public int[] sort( int[] inputArray ) {
     Node tree = Node.makeTree(inputArray);
