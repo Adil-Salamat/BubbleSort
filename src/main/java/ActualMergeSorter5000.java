@@ -22,7 +22,7 @@ public class ActualMergeSorter5000 {
     }
 
     //this for loop fills in right half, j is assigned to middle so it starts from the end of left half,
-    //j/middle is taken away from itself so that it is reset to 0 while mergSortArray[j] starts from where left ended
+    //j/middle is taken away from itself so that it is reset to 0 while mergeSortArray[j] starts from where left ended
     for(int j =middle; j < mergeSortArrayLength; j++){
       rightHalf[j - middle] = mergeSortArray[j];
     }
@@ -65,7 +65,7 @@ public class ActualMergeSorter5000 {
       c++;
     }
 
-    // this is what i was missing from Merger5000 class, both loops check for unevenness and add to end
+    // this is what I was missing from Merger5000 class, both loops check for unevenness and add to end
     while(a < leftLength){
       mergeSortArray[c] = leftHalf[a];
       a++;

@@ -12,6 +12,10 @@ public class Main {
     int[] array3 = {1,3,5,5,9};
     int[] array4 = {2,4,6};
 
+    int[] treeArray= {5,7,2,4,57657,98,65};
+    Node tree = Node.makeTree(treeArray);
+    int[] sortedArray = Node.readTree(tree);
+
 
     System.out.println(Arrays.toString(BubbleSorter5000.bubbleSorter5000(bubbleSortArray)));
 
@@ -22,6 +26,9 @@ public class Main {
     System.out.println(Arrays.toString(Merger5000.merger5000(array3, array4)));
 
     System.out.println(Arrays.toString(ActualMergeSorter5000.actualMergeSorter5000(mergeSortArray)));
+
+    System.out.println(Arrays.toString(sortedArray));
+
 
   }
 }
