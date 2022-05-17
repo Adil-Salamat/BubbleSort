@@ -1,5 +1,6 @@
-public class ActualMergeSorter5000 {
-  public static int[] actualMergeSorter5000(int[] mergeSortArray){
+public class ActualMergeSorter5000 implements Sorter5000 {
+  @Override
+  public int[] sort( int[] mergeSortArray ){
 
     // variable for length of array, use this a lot
     int mergeSortArrayLength = mergeSortArray.length;
@@ -28,9 +29,9 @@ public class ActualMergeSorter5000 {
     }
 
     //call the method we just made for each half, this is the divide part of the sort method
-    actualMergeSorter5000( leftHalf );
+    sort( leftHalf );
     // this comment is to show where leftHalf would break after the if<=1 statement
-    actualMergeSorter5000( rightHalf );
+    sort( rightHalf );
     // this comment is to show where rightHalf would break after the if<=1 statement
 
     //calls the method made below, the parameters passed after divide step of merge sort method

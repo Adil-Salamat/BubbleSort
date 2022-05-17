@@ -1,7 +1,10 @@
-import java.util.Arrays;
+public class BubbleSorter5000 implements Sorter5000 {
 
-public class BubbleSorter5000 {
-  public static int[] bubbleSorter5000(int[] bubbleSortArray){
+
+
+  @Override
+  public  int[] sort( int[] bubbleSortArray ){
+
 
     int i = 1;
     int j = 0;

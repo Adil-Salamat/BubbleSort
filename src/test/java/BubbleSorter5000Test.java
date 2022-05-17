@@ -4,12 +4,13 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BubbleSorter5000Test {
+  BubbleSorter5000 bubble = new BubbleSorter5000();
   @Test
   public void bubbleSortTest(){
     int[] unsorted = {5,4,3,2,1};
     int[] sorted = {1,2,3,4,5};
 
-    int[] actuallySorted = BubbleSorter5000.bubbleSorter5000( unsorted );
+    int[] actuallySorted = bubble.sort( unsorted );
 
     assertThat(actuallySorted).isEqualTo(sorted);
   }
@@ -19,7 +20,7 @@ class BubbleSorter5000Test {
     int[] unsorted = {-5,4,3,-2,1};
     int[] sorted = {-5,-2,1,3,4};
 
-    int[] actuallySorted = BubbleSorter5000.bubbleSorter5000( unsorted );
+    int[] actuallySorted = bubble.sort( unsorted );
 
     assertThat(actuallySorted).isEqualTo(sorted);
   }
@@ -28,7 +29,7 @@ class BubbleSorter5000Test {
     int[] unsorted = {1,2,3,4,5};
     int[] sorted = {1,2,3,4,5};
 
-    int[] actuallySorted = BubbleSorter5000.bubbleSorter5000( unsorted );
+    int[] actuallySorted = bubble.sort( unsorted );
 
     assertThat(actuallySorted).isEqualTo(sorted);
   }

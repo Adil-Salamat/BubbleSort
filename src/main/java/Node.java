@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Node {
+public class Node{
 
   public int nodeValue;
 
@@ -19,7 +19,7 @@ public class Node {
     // make root node that is first number
     Node rootNode = new Node( treeArray[ 0 ] );
 
-    // loops through other numbers starting from postion 1, turn each int into special node object
+    // loops through other numbers starting from position 1, turn each int into special node object
     for(int i=1; i<treeArray.length; i++) {
       int temp   = treeArray[i];
       //takes node number makes it into new node
