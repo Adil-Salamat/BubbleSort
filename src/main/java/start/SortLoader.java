@@ -17,6 +17,7 @@ public class SortLoader {
       DisplayManager.displaySortChoices();
       Sorter5000 sorter = SorterFactory.getSorter( scanner.nextInt() );
 
+
       System.out.println( "enter size of array u wanna generate: " );
 
       int[] arrayToSort = createArray( scanner.nextInt() );

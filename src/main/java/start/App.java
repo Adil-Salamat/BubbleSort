@@ -10,7 +10,9 @@ public class App {
 
 
   public static void main( String[] args ) {
-    logger.info("Start sort manager");
+
+    logger.debug( "u suck" );
+    logger.error("bro");
     SortLoader.start();
   }
 }

@@ -1,11 +1,14 @@
 package display;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sorters.Sorter5000;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class DisplayManager {
+  private static Logger logger = LogManager.getLogger("timer");
   public static ArrayList<String> getMenuItems(){
     return new ArrayList<>( Arrays.asList("BubbleSorter5000","MergeSorter5000","BinaryTreeSorter5000"));
   }
@@ -21,6 +24,7 @@ public class DisplayManager {
     long end = System.nanoTime();
     System.out.println("After Sorting: \n" + Arrays.toString(sortedArray));
     System.out.println("Time Taken: \n" + (end-start) + "nano seconds.");;
+    logger.info(end-start + " nano seconds");
   }
 
   public static void displaySortChoices(){
