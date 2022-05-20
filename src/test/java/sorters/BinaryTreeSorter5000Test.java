@@ -43,4 +43,16 @@ class BinaryTreeSorter5000Test {
 
   }
 
+  @Test
+  void binaryTreeSorter5000Dup() {
+
+    int[] array = {100,90,90,90,50,40,30,20};
+    int[] sorted = {20, 30, 40, 50, 90, 90, 90, 100};
+
+    int[]merge = binary.sort(array);
+
+    assertThat(merge).isEqualTo(sorted);
+
+  }
+
 }

@@ -1,10 +1,7 @@
 package start;
 
 import exceptions.SorterLoaderException;
-import sorters.ActualMergeSorter5000;
-import sorters.BinaryTreeSorter5000;
-import sorters.BubbleSorter5000;
-import sorters.Sorter5000;
+import sorters.*;
 
 public class SorterFactory{
   public static Sorter5000 getSorter(int choice) throws SorterLoaderException {
@@ -17,6 +14,8 @@ public class SorterFactory{
 
       case 3 :
         return new BinaryTreeSorter5000();
+
+        case 4: return new InsertionSorter5000();
 
       default: throw new SorterLoaderException("Invalid sorter choice: " + "'" +choice + "'");
 

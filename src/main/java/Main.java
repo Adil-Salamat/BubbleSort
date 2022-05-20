@@ -1,6 +1,7 @@
 import sorters.ActualMergeSorter5000;
 import sorters.BinaryTreeSorter5000;
 import sorters.BubbleSorter5000;
+import sorters.InsertionSorter5000;
 
 import java.util.Arrays;
 
@@ -18,9 +19,12 @@ public class Main {
 
     int[] treeArray= {5,7,2,4,57657,98,65};
 
+    int[] insertArray = {13,5,9,34,56,78,6};
+
     BubbleSorter5000 bubble = new BubbleSorter5000();
     ActualMergeSorter5000 merger = new ActualMergeSorter5000();
     BinaryTreeSorter5000 binary = new BinaryTreeSorter5000();
+    InsertionSorter5000 insert = new InsertionSorter5000();
 
 
     System.out.println(Arrays.toString(bubble.sort(bubbleSortArray)));

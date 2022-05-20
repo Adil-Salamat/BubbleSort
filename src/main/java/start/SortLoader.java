@@ -4,6 +4,8 @@ import display.DisplayManager;
 import exceptions.SorterLoaderException;
 import sorters.Sorter5000;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -22,8 +24,27 @@ public class SortLoader {
 
       int[] arrayToSort = createArray( scanner.nextInt() );
 
-      DisplayManager.printBeforeSort(sorter,arrayToSort);
-      DisplayManager.printResult(sorter,arrayToSort);
+      int[] arrayToSort2 = arrayToSort;
+      for(int i = 0; i <arrayToSort.length; i++){
+        arrayToSort2[i] = arrayToSort[ i ];
+      }
+      System.out.println( Arrays.toString( arrayToSort2 ));
+
+
+      System.out.println( "Would you like to compare with another array?: " );
+
+      DisplayManager.displayCompareChoices();
+      if(scanner.nextInt() == 1) {
+        DisplayManager.displaySortChoices();
+        Sorter5000 sorter2 = SorterFactory.getSorter( scanner.nextInt() );
+        DisplayManager.printBeforeSortTwo( sorter, sorter2,arrayToSort, arrayToSort2 );
+        DisplayManager.printResultTwo( sorter,sorter2,arrayToSort, arrayToSort2 );
+
+
+      }else {
+        DisplayManager.printBeforeSort( sorter, arrayToSort );
+        DisplayManager.printResult( sorter, arrayToSort );
+      }
 
     } catch ( SorterLoaderException e ) {
       System.out.println(e.getMessage());
